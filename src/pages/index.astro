@@ -7,6 +7,8 @@ import {SITE_TITLE, SITE_DESCRIPTION, GLOBAL_STYLE, BIO, AVATAR_SRC} from '../co
 import GitHubIcon from "../components/icons/GitHubIcon.astro";
 import {Card, Typo} from '@koibumi-design/solidjs'
 import PostCard from "../components/PostCard.astro";
+import Headertest from "../components/Headertest.astro";
+import LeftHeader from "../components/LeftHeader.astro";
 
 const posts = (await getCollection('blog'))
     .filter(post => post.data.pinned)
@@ -20,8 +22,10 @@ const posts = (await getCollection('blog'))
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION}/>
 </head>
 <body>
-<Header/>
-<main>
+<!--<body style="margin: 0;">-->
+<LeftHeader/>
+<!--<main>-->
+<main style="margin-top: 0;">
     <Card variant={GLOBAL_STYLE} id="avatar-bio">
         <img src={AVATAR_SRC} alt="avatar"/>
         <section id="bio">

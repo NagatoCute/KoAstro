@@ -1,0 +1,84 @@
+---
+import HeaderLink from './HeaderLink.astro';
+import { Card, Typo, Link } from '@koibumi-design/solidjs';
+import { GLOBAL_STYLE, SITE_TITLE } from '../consts';
+---
+
+<!-- 在博客页面中，将 header 包裹在一个具有 `blog-page-header` 类的容器内 -->
+<div class="blog-page-header">
+    <Card class="head-container" variant={GLOBAL_STYLE}>
+        <header>
+            <nav class="header-nav">
+                <div class="header-left">
+                    <Typo variant="h1">
+                        <Link href="/" id="title">
+                            {SITE_TITLE}
+                        </Link>
+                    </Typo>
+                </div>
+                <div class="header-right">
+                    <div class="internal-links">
+                        <HeaderLink href="/">Home</HeaderLink>
+                        <HeaderLink href="/blog">Blog</HeaderLink>
+                        <HeaderLink href="https://github.com/koibumi-design/astro-blog">GitHub</HeaderLink>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </Card>
+</div>
+
+<style>
+    /* 仅针对博客页面的 header 进行样式调整 */
+    .blog-page-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 10%; /* 或根据实际需求调整左侧宽度 */
+        height: 100vh;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+        z-index: 100; /* 确保 header 层叠在其他元素之上 */
+    }
+
+    .header-nav {/* 左侧标题栏 */
+        padding: 1rem 0.5rem; /* 调整顶部和底部间距，根据需要调整数值 */
+        display: flex;
+        flex-direction: column; /* 更改为垂直方向排列 */
+        align-items: center;
+    }
+
+    #title {
+        text-decoration: none;
+    }
+
+    #title:hover {
+        text-decoration: underline;
+    }
+
+    .header-right {
+        /* 移除不必要的 display: flex 和 padding 属性 */
+    }
+
+    .internal-links {
+        /* 移除不必要的 height: 100% 和 margin 属性 */
+        display: flex;
+        flex-direction: column; /* 更改为垂直方向排列 */
+        gap: 3rem; /* 设置按钮之间的垂直间距 */
+    }
+
+    #title {
+        text-decoration: none;
+    }
+
+    #title:hover {
+        text-decoration: underline;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+
+</style>

@@ -5,6 +5,7 @@ import Footer from '../../components/Footer.astro';
 import {SITE_TITLE, SITE_DESCRIPTION} from '../../consts';
 import {getCollection} from 'astro:content';
 import PostCard from "../../components/PostCard.astro";
+import Headertest from "../../components/Headertest.astro";
 
 const posts = (await getCollection('blog'))
     .filter(post => !post.data.notCompleted)
@@ -19,7 +20,7 @@ const posts = (await getCollection('blog'))
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION}/>
 </head>
 <body>
-<Header/>
+<Headertest/>
 <main>
     <section>
         {
