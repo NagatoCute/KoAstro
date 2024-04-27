@@ -7,7 +7,7 @@ import '../styles/LeftHeader.scss';
 ---
 
 <!-- 在博客页面中，将 header 包裹在一个具有 `blog-page-header` 类的容器内 -->
-<div class="blog-page-header">
+<div class="desktop-header">
     <Card class="head-container" variant={GLOBAL_STYLE}>
         <header>
             <nav class="header-nav">
@@ -27,7 +27,8 @@ import '../styles/LeftHeader.scss';
 </div>
 
 <style>
-    .blog-page-header {
+    .desktop-header {
+        display: none;
         position: fixed;
         top: 1rem;
         left: 1rem;
@@ -36,13 +37,42 @@ import '../styles/LeftHeader.scss';
         box-shadow: 0 0 8px rgba(0, 0, 0, 0);
         z-index: 300;
 
+        .head-container {
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+
+            nav {
+                padding: 0 0.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                max-width: 90rem;
+                margin: 0 auto;
+                flex-wrap: wrap;
+                gap: 1rem;
+
+                #title {
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .internal-links {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+            }
+        }
+
         .header-nav {
             padding: 0.9rem 0.7rem;
             display: flex;
             flex-direction: column;
             align-items: center;
-
-            //border: 1px solid #ccc;
 
             @media (min-width: 768px) {
                 border-width: 2px 0;
@@ -64,9 +94,8 @@ import '../styles/LeftHeader.scss';
             }
         }
 
-        // 添加媒体查询以在屏幕宽度小于600px时隐藏
-        @media (max-width: 678px) {
-            display: none;
+        @media (min-width: 678px) {
+            display: block;
         }
     }
 

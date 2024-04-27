@@ -1,0 +1,17 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+---
+<div class="internal-links">
+    <HeaderLink href="/">Home</HeaderLink>
+    <HeaderLink href="/blog">Blog</HeaderLink>
+    <HeaderLink href="https://github.com/koibumi-design/astro-blog">GitHub</HeaderLink>
+</div>
+
+<style>
+    .internal-links {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row; /* 更改为水平方向排列 */
+        gap: 1rem; /* 设置按钮之间的水平间距，按需调整 */
+    }
+</style>

@@ -4,8 +4,9 @@ import '../styles/_header.scss';
 import {Card, Typo, Link} from "@koibumi-design/solidjs";
 import {GLOBAL_STYLE, SITE_TITLE} from '../consts';
 import Navigation from "./Navigation.astro";
+import NaviC from "./NaviC.astro";
 ---
-<div class="blog-header">
+<div class="mobile-header">
 <Card class="head-container" variant={GLOBAL_STYLE}>
 	<header>
 		<nav>
@@ -14,12 +15,14 @@ import Navigation from "./Navigation.astro";
 					{SITE_TITLE}
 				</Link>
 			</Typo>
-			<Navigation/>
+			<NaviC/>
 		</nav>
 	</header>
 </Card>
 </div>
 <style>
+	.mobile-header {
+		display: none;
 	.head-container {
 		border-top-right-radius: 0;
 		border-top-left-radius: 0;
@@ -50,7 +53,9 @@ import Navigation from "./Navigation.astro";
 			gap: .5rem;
 		}
 
-		@media (min-width: 678px) {
+
+	}
+		@media (max-width: 677px) {
 			display: block;
 		}
 	}
