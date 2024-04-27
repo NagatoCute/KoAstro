@@ -10,7 +10,7 @@ export const FAVICON_SRC = '/favicon.ico';
 export const AVATAR_SRC = '/avatar.avif';
 
 
-export const BIO = " 欢迎来到我的网站\，现在还没有做任何修改\。"
+export const BIO = " 欢迎来到我的网站\，现在还在建设中\。"
 
 // export const GLOBAL_STYLE: 'quartz' | 'glass' | 'lightGlass' = 'glass'
 export const GLOBAL_STYLE: 'quartz' | 'glass' | 'lightGlass' = 'glass';
