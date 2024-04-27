@@ -6,6 +6,7 @@ import {SITE_TITLE, SITE_DESCRIPTION} from '../../consts';
 import {getCollection} from 'astro:content';
 import PostCard from "../../components/PostCard.astro";
 import Headertest from "../../components/Headertest.astro";
+import LeftHeader from "../../components/LeftHeader.astro";
 
 const posts = (await getCollection('blog'))
     .filter(post => !post.data.notCompleted)
@@ -20,7 +21,7 @@ const posts = (await getCollection('blog'))
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION}/>
 </head>
 <body>
-<Headertest/>
+<LeftHeader/>
 <main>
     <section>
         {
@@ -40,7 +41,7 @@ const posts = (await getCollection('blog'))
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 1rem;
         max-width: 90rem;
-        margin: 5rem auto;
+        margin: 5rem 0 5rem 10rem;
         padding: 2rem;
     }
 </style>

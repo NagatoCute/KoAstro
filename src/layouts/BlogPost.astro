@@ -6,6 +6,7 @@ import Footer from '../components/Footer.astro';
 import {Card, Typo} from "@koibumi-design/solidjs"
 import {GLOBAL_STYLE} from "../consts";
 import "../styles/article.scss"
+import LeftHeader from "../components/LeftHeader.astro";
 
 type Props = CollectionEntry<'blog'>['data'];
 
@@ -18,7 +19,7 @@ const {title, description} = Astro.props;
 </head>
 
 <body>
-<Header/>
+<LeftHeader/>
 <main>
     <Card variant={GLOBAL_STYLE}>
         <article>

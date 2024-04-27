@@ -29,22 +29,41 @@ import { GLOBAL_STYLE, SITE_TITLE } from '../consts';
 </div>
 
 <style>
-    /* 仅针对博客页面的 header 进行样式调整 */
+
     .blog-page-header {
         position: fixed;
         top: 0;
         left: 0;
-        width: 10%; /* 或根据实际需求调整左侧宽度 */
+        width: 10%; /* 左侧宽度 */
         height: 100vh;
-        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
-        z-index: 100; /* 确保 header 层叠在其他元素之上 */
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        z-index: 100;
     }
 
     .header-nav {/* 左侧标题栏 */
-        padding: 1rem 0.5rem; /* 调整顶部和底部间距，根据需要调整数值 */
+        padding: 1rem 0.5rem; /* 调整顶部和底部间距，*/
         display: flex;
         flex-direction: column; /* 更改为垂直方向排列 */
         align-items: center;
+
+        /* 添加外边框样式，并根据屏幕宽度调整 */
+        border: 1px solid #ccc;
+        border-width: 1px 0; /* 只保留上下边框，去掉左右边框 */
+
+        /* 使用媒体查询根据屏幕宽度调整边框宽度 */
+        @media (min-width: 768px) {
+            border-width: 2px 0; /* 在屏幕宽度≥768px时，增大边框宽度 */
+        }
+    }
+
+    /* 选择器可以根据实际需要替换为具体的文字元素，如 .header-nav h1, .header-nav a 等 */
+    .header-nav h1, .header-nav a { /* 示例：为 .header-nav 内的 h1 和 a 元素设置字体大小 */
+        font-size: 1rem;
+
+        /* 使用媒体查询根据屏幕宽度调整字体大小 */
+        @media (min-width: 768px) {
+            font-size: 1.2rem; /* 在屏幕宽度≥768px时，增大字体大小 */
+        }
     }
 
     #title {
@@ -56,11 +75,11 @@ import { GLOBAL_STYLE, SITE_TITLE } from '../consts';
     }
 
     .header-right {
-        /* 移除不必要的 display: flex 和 padding 属性 */
+
     }
 
     .internal-links {
-        /* 移除不必要的 height: 100% 和 margin 属性 */
+
         display: flex;
         flex-direction: column; /* 更改为垂直方向排列 */
         gap: 3rem; /* 设置按钮之间的垂直间距 */
@@ -80,5 +99,59 @@ import { GLOBAL_STYLE, SITE_TITLE } from '../consts';
         gap: 1rem;
     }
 
-
 </style>
+
+<!--<style>-->
+
+<!--    .blog-page-header {-->
+<!--        position: fixed;-->
+<!--        top: 0;-->
+<!--        left: 0;-->
+<!--        width: 10%; /* 左侧宽度 */-->
+<!--        height: 100vh;-->
+<!--        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);-->
+<!--        z-index: 100;-->
+<!--    }-->
+
+<!--    .header-nav {/* 左侧标题栏 */-->
+<!--        padding: 1rem 0.5rem; /* 调整顶部和底部间距，*/-->
+<!--        display: flex;-->
+<!--        flex-direction: column; /* 更改为垂直方向排列 */-->
+<!--        align-items: center;-->
+<!--    }-->
+
+<!--    #title {-->
+<!--        text-decoration: none;-->
+<!--    }-->
+
+<!--    #title:hover {-->
+<!--        text-decoration: underline;-->
+<!--    }-->
+
+<!--    .header-right {-->
+
+<!--    }-->
+
+<!--    .internal-links {-->
+
+<!--        display: flex;-->
+<!--        flex-direction: column; /* 更改为垂直方向排列 */-->
+<!--        gap: 3rem; /* 设置按钮之间的垂直间距 */-->
+<!--    }-->
+
+<!--    #title {-->
+<!--        text-decoration: none;-->
+<!--    }-->
+
+<!--    #title:hover {-->
+<!--        text-decoration: underline;-->
+<!--    }-->
+
+<!--    nav {-->
+<!--        display: flex;-->
+<!--        flex-wrap: wrap;-->
+<!--        gap: 1rem;-->
+<!--    }-->
+
+
+<!--</style>-->
