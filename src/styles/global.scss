@@ -22,3 +22,91 @@ main {
   flex-grow: 1;
 }
 
+
+/* nav styles */
+
+/* 默认情况下，假设移动设备优先，先隐藏桌面版Header */
+.header-desktop {
+  display: none;
+}
+
+/* 当屏幕宽度足够大时，显示桌面版Header，隐藏移动版Header */
+@media screen and (min-width: 639px) {
+  .header-desktop {
+    display: none;
+  }
+  .header-mobile {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+//
+//.hamburger {
+//  padding-right: 20px;
+//  cursor: pointer;
+//}
+//
+//.hamburger .line {
+//  display: block;
+//  width: 40px;
+//  height: 5px;
+//  margin-bottom: 10px;
+//  background-color: #ff9776;
+//}
+//
+//.internal-links { /* 更改选择器名称 */
+//  width: 100%;
+//  top: 5rem;
+//  left: 48px;
+//  //background-color: #ff9776;
+//  display: none;
+//  margin: 0;
+//}
+//
+//.internal-links a { /* 更新选择器对应的部分 */
+//  display: block;
+//  text-align: center;
+//  padding: 10px 0;
+//  text-decoration: none;
+//  font-size: 1.2rem;
+//  font-weight: bold;
+//  text-transform: uppercase;
+//}
+//
+//.internal-links a:hover,
+//.internal-links a:focus {
+//  //background-color: #ff9776;
+//}
+//
+//.expanded {
+//  display: block;
+//}
+//
+//@media screen and (min-width: 636px) {
+//  //.internal-links { /* 更新选择器名称 */
+//  //  margin-left: 5em;
+//  //  display: block;
+//  //  position: static;
+//  //  width: auto;
+//  //  background: none;
+//  //}
+//  //
+//  //.internal-links a { /* 更新选择器对应的部分 */
+//  //  display: inline-block;
+//  //  padding: 15px 20px;
+//  //}
+//
+//  .hamburger {
+//    display: none; /* 在此条件下隐藏汉堡菜单 */
+//  }
+//}

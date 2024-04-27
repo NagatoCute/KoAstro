@@ -5,7 +5,6 @@ import Footer from '../../components/Footer.astro';
 import {SITE_TITLE, SITE_DESCRIPTION} from '../../consts';
 import {getCollection} from 'astro:content';
 import PostCard from "../../components/PostCard.astro";
-import Headertest from "../../components/Headertest.astro";
 import LeftHeader from "../../components/LeftHeader.astro";
 
 const posts = (await getCollection('blog'))
@@ -17,11 +16,15 @@ const posts = (await getCollection('blog'))
 
 <!doctype html>
 <html lang="en">
+
 <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION}/>
+    <LeftHeader/>
 </head>
 <body>
-<LeftHeader/>
+
+
+
 <main>
     <section>
         {
@@ -36,12 +39,14 @@ const posts = (await getCollection('blog'))
 </html>
 
 <style>
+
+
     section {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 1rem;
+        gap: 2rem;
         max-width: 90rem;
-        margin: 5rem 0 5rem 10rem;
+        margin: 0rem 2rem 2rem 10rem;
         padding: 2rem;
     }
 </style>

@@ -9,13 +9,49 @@ const {href, class: className, ...props} = Astro.props;
 const {pathname} = Astro.url;
 const subpath = pathname.match(/[^\/]+/g);
 const isActive = href === pathname || href === '/' + subpath?.[0];
+
+
+// 给Button组件添加一个类名以方便样式控制
+const buttonClass = 'responsive-button';
 ---
 
 <Button
-        variant={isActive ? 'solid' : 'light'}
-        as="link"
-        href={href?.toString()}
-        target='_self'
+        class={buttonClass}
+variant={isActive ? 'solid' : 'light'}
+as="link"
+href={href?.toString()}
+target='_self'
 >
-    <slot/>
+<slot/>
 </Button>
+
+<style>
+    /* 默认按钮样式 */
+    .responsive-button {
+        padding: 10px 15px; /* 根据需要调整默认大小 */
+        font-size: 10px;
+    }
+
+    /* 当屏幕宽度小于等于600px时，减小按钮尺寸 */
+    @media (max-width: 700px) {
+        .responsive-button {
+            padding: 4px 4px; /* 减小内边距以减小按钮大小 */
+            font-size: 7px; /* 减小字体大小 */
+        }
+    }
+</style>
+
+
+
+
+<!--<Button-->
+
+<!--        variant={isActive ? 'solid' : 'light'}-->
+<!--        as="link"-->
+<!--        href={href?.toString()}-->
+<!--        target='_self'-->
+<!--&gt;-->
+<!--    <slot/>-->
+<!--</Button>-->
+
+

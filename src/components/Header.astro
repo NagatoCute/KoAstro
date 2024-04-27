@@ -1,7 +1,9 @@
 ---
 import HeaderLink from './HeaderLink.astro';
+import '../styles/_header.scss';
 import {Card, Typo, Link} from "@koibumi-design/solidjs";
 import {GLOBAL_STYLE, SITE_TITLE} from '../consts';
+import Navigation from "./Navigation.astro";
 ---
 
 <Card class="head-container" variant={GLOBAL_STYLE}>
@@ -12,45 +14,7 @@ import {GLOBAL_STYLE, SITE_TITLE} from '../consts';
 					{SITE_TITLE}
 				</Link>
 			</Typo>
-			<div class="internal-links">
-				<HeaderLink href="/">Home</HeaderLink>
-				<HeaderLink href="/blog">Blog</HeaderLink>
-				<HeaderLink href="https://github.com/koibumi-design/astro-blog">GitHub</HeaderLink>
-			</div>
+			<Navigation/>
 		</nav>
 	</header>
 </Card>
-
-
-<style>
-	.head-container {
-		border-top-right-radius: 0;
-		border-top-left-radius: 0;
-	}
-
-	#title {
-		text-decoration: none;
-	}
-
-	#title:hover {
-		text-decoration: underline;
-	}
-
-    nav {
-        padding: 0 0.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        max-width: 90rem;
-        margin: 0 auto;
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-
-    .internal-links {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        gap: .5rem;
-    }
-</style>
