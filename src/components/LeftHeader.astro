@@ -25,3 +25,49 @@ import '../styles/LeftHeader.scss';
         </header>
     </Card>
 </div>
+
+<style>
+    .blog-page-header {
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        width: 10%;
+        height: 100vh;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0);
+        z-index: 300;
+
+        .header-nav {
+            padding: 0.9rem 0.7rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            //border: 1px solid #ccc;
+
+            @media (min-width: 768px) {
+                border-width: 2px 0;
+            }
+
+            h1, a {
+                font-size: 1rem;
+
+                @media (min-width: 768px) {
+                    font-size: 1.2rem;
+                }
+            }
+
+            #title {
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        // 添加媒体查询以在屏幕宽度小于600px时隐藏
+        @media (max-width: 678px) {
+            display: none;
+        }
+    }
+
+</style>

@@ -16,16 +16,13 @@ const posts = (await getCollection('blog'))
 
 <!doctype html>
 <html lang="en">
-
 <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION}/>
-    <LeftHeader/>
 </head>
 <body>
-
-
-
-<main>
+<LeftHeader class="desktop-only"/>
+<Header class="mobile-only"/>
+<main style="margin-top: 0rem">
     <section>
         {
             posts.map((post) => (
@@ -38,15 +35,46 @@ const posts = (await getCollection('blog'))
 </body>
 </html>
 
+
 <style>
+    .desktop-only {
+        display: block; /* 默认显示，适用于桌面 */
+    }
 
+    .mobile-only {
+        display: none; /* 默认隐藏，适用于桌面 */
+    }
 
+    /* 添加针对移动端的媒体查询 */
+    @media (max-width: 767px) { /* 假设767px为移动端的上限，可根据实际情况调整 */
+        .desktop-only {
+            display: none; /* 在移动端隐藏 */
+        }
+        .mobile-only {
+            display: block; /* 在移动端显示 */
+        }
+    }
+    @media (min-width: 768px) { /* 假设767px为移动端的上限，可根据实际情况调整 */
+        .desktop-only {
+            display: block; /* 在移动端隐藏LeftHeader */
+        }
+        .mobile-only {
+            display: none; /* 在移动端显示Header */
+        }
+    }
     section {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 2rem;
+        gap: 1rem;
         max-width: 90rem;
-        margin: 0rem 2rem 2rem 10rem;
+        margin: 0 auto;
         padding: 2rem;
+    }
+
+    /* 添加针对PC端的媒体查询 */
+    @media (min-width: 768px) { /* 假设768px为PC端的起点，可根据实际情况调整 */
+        section {
+            margin-left: calc(5rem + 5rem); /* 在原有的基础上增加10rem */
+        }
     }
 </style>
