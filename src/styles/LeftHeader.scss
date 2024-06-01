@@ -1,83 +1,71 @@
-//.blog-page-header {
-//  position: fixed;
-//  top: 1rem;
-//  left: 1rem;
-//  width: 10%;
-//  height: 100vh;
-//  box-shadow: 0 0 8px rgba(0, 0, 0, 0);
-//  z-index: 300;
-//
-//  .header-nav {
-//    padding: 0.9rem 0.7rem;
-//    display: flex;
-//    flex-direction: column;
-//    align-items: center;
-//
-//    //border: 1px solid #ccc;
-//
-//    @media (min-width: 768px) {
-//      border-width: 2px 0;
-//    }
-//
-//    h1, a {
-//      font-size: 1rem;
-//
-//      @media (min-width: 768px) {
-//        font-size: 1.2rem;
-//      }
-//    }
-//
-//    #title {
-//      text-decoration: none;
-//      &:hover {
-//        text-decoration: underline;
-//      }
-//    }
-//  }
-//
-//  // 添加媒体查询以在屏幕宽度小于600px时隐藏
-//  @media (max-width: 678px) {
-//    display: none;
-//  }
-//}
-//
+.desktop-header {
+  display: none;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  width: 10%;
+  height: 100vh;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0);
+  z-index: 300;
 
+  .head-container {
+    //border-top-right-radius: 0;
+    //border-top-left-radius: 0;
+    border-radius: 10px;
+    nav {
+      padding: 0 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 90rem;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      gap: 1rem;
 
-//.blog-page-header {
-//  position: fixed;
-//  top: 1rem;
-//  left: 1rem;
-//  width: 10%;
-//  height: 100vh;
-//  box-shadow: 0 0 8px rgba(0, 0, 0, 0);
-//  z-index: 300;
-//
-//  .header-nav {
-//    padding: 0.9rem 0.7rem;
-//    display: flex;
-//    flex-direction: column;
-//    align-items: center;
-//
-//    //border: 1px solid #ccc;
-//
-//    @media (min-width: 768px) {
-//      border-width: 2px 0;
-//    }
-//
-//    h1, a {
-//      font-size: 1rem;
-//
-//      @media (min-width: 768px) {
-//        font-size: 1.2rem;
-//      }
-//    }
-//
-//    #title {
-//      text-decoration: none;
-//      &:hover {
-//        text-decoration: underline;
-//      }
-//    }
-//  }
-//
-//}
+      #title {
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .internal-links {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+    }
+  }
+
+  .header-nav {
+    padding: 0.9rem 0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 768px) {
+      border-width: 2px 0;
+    }
+
+    h1, a {
+      font-size: 1rem;
+
+      @media (min-width: 768px) {
+        font-size: 1.2rem;
+      }
+    }
+
+    #title {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  @media (min-width: 900px) {
+    display: block;
+  }
+}

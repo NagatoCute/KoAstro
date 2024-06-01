@@ -17,7 +17,10 @@
     "@astrojs/solid-js": "^4.0.1",
     "@koibumi-design/solidjs": "^0.0.8",
     "astro": "^4.5.2",
+    "gray-matter": "^4.0.3",
     "rehype-katex": "^7.0.0",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1",
     "remark-math": "^6.0.0",
     "solid-js": "^1.8.16",
     "typescript": "^5.4.2"
