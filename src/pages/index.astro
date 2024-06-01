@@ -8,7 +8,7 @@ import GitHubIcon from "../components/icons/GitHubIcon.astro";
 import {Card, Typo} from '@koibumi-design/solidjs'
 import PostCard from "../components/PostCard.astro";
 import LeftHeader from "../components/LeftHeader.astro";
-import BlogList from "../components/BlogList.astro";
+// import BlogList from "../components/BlogList.astro";
 
 const posts = (await getCollection('blog'))
     .filter(post => post.data.pinned)
