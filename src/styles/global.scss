@@ -31,7 +31,7 @@ main {
 }
 
 /* 当屏幕宽度足够大时，显示桌面版Header，隐藏移动版Header */
-@media screen and (min-width: 639px) {
+@media screen and (min-width: 1000px) {
   .header-desktop {
     display: none;
   }
