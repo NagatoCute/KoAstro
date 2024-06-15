@@ -6,6 +6,7 @@ heroImage: '/fabric.png'
 pinned: true
 ---
 
+
 # 环境配置
 获取模板mod：[Template mod generator | Fabric (fabricmc.net)](https://fabricmc.net/develop/template/)
 
