@@ -2,9 +2,10 @@
 title: 'Fabric MOD 环境配置'
 description: '环境配置的要点'
 pubDate: 'Jul 15 2024'
-heroImage: '/117092881_p4.webp'
+heroImage: '/fabric.png'
 pinned: true
 ---
+
 
 # 环境配置
 获取模板mod：[Template mod generator | Fabric (fabricmc.net)](https://fabricmc.net/develop/template/)
@@ -28,7 +29,7 @@ systemProp.https.proxyPort=4780
 如果导入gradle提示java版本不对，在`idea设置/Build/ Build Tools/Gradle`里面改构建gradle使用的jdk版本。
 
 ## 镜像源
-如有需要，可以在 gradle.properties 中设置镜像源。镜像源可能有时不可用，或者内容更新滞后，如需使用官方源，可暂时将相关内容注释掉即可。BMCLAPI 镜像缓慢时，可使用官方源，或参考校园网联合镜像站。
+如有需要，可以在 `gradle.properties` 中设置镜像源。镜像源可能有时不可用，或者内容更新滞后，如需使用官方源，可暂时将相关内容注释掉即可。BMCLAPI 镜像缓慢时，可使用官方源，或参考校园网联合镜像站。
 
 ``` properties
 loom_libraries_base=https://bmclapi2.bangbang93.com/maven/
@@ -39,7 +40,7 @@ loom_fabric_repository=https://repository.hanbings.io/proxy/
 ```
 
 ## Gradle 无法下载
-部分地区的用户在下载 Gradle 时，可能遇到 Connection Reset 的问题。这种情况下可以使用镜像源下载 Gradle。例如，在 gradle/wrapper/gradle-wrapper.properties 文件中，将 distributionUrl 的值设置为镜像地址，例如：
+部分地区的用户在下载 Gradle 时，可能遇到 `Connection Reset` 的问题。这种情况下可以使用镜像源下载 Gradle。例如，在 `gradle/wrapper/gradle-wrapper.properties` 文件中，将 `distributionUrl` 的值设置为镜像地址，例如：
 
 ### 修改前
 ```
