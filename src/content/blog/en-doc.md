@@ -3,7 +3,7 @@ title: 'Koibumi Astro Blog Document'
 description: 'Introduce how to use Koibumi Astro Blog (English Version)'
 pubDate: 'Mar 26 2023'
 heroImage: '/117092881_p1.webp'
-pinned: true
+pinned: false
 notCompleted: false
 ---
 

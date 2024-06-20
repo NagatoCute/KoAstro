@@ -1,7 +1,7 @@
 ---
 title: 'Fabric MOD 环境配置'
 description: '环境配置的要点'
-pubDate: 'Jul 15 2024'
+pubDate: 'Jun 15 2024'
 heroImage: '/fabric.png'
 pinned: true
 ---
