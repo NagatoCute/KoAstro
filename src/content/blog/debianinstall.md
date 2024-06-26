@@ -30,4 +30,4 @@ $ screenfetch
 https://www.mulingyuer.com/archives/940/
 
 结果：
-![Screenfetch png](https://live.staticflickr.com/65535/53814829922_251592d412_b.jpg)
+https://live.staticflickr.com/65535/53814829922_251592d412_b.jpg
