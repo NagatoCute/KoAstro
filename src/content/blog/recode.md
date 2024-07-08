@@ -3,7 +3,7 @@ title: '修改记录'
 description: '这是本站点的修改记录。'
 pubDate: 'Apr 23 2024'
 heroImage: '/117092881_p0.webp'
-pinned: true
+pinned: false
 ---
 > blog 站点修改记录 
 
