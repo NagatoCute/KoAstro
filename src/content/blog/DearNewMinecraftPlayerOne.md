@@ -49,7 +49,7 @@ pinned: true
 
 以 PCL2 为例
 
-<img src="https://t.tutu.to/img/mOxrG" alt="java导入" class="responsive-image"/>
+<img src="https://t.tutu.to/img/mOxrG" alt="JAVA导入" class="responsive-image"  />
 
 一般来说选择自动搜索和导入即可，手动也行，这没啥事
 
