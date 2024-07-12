@@ -21,9 +21,9 @@ pinned: true
 
 [下载 - Hello Minecraft! Launcher (huangyuhui.net)](https://hmcl.huangyuhui.net/download/)
 
-<img src="https://t.tutu.to/img/mrupw" alt="pcl2图像" style="zoom:60.5%;" />
+<img src="https://t.tutu.to/img/mrupw" alt="pcl2图像" class="responsive-image" />
 
-<img src="https://www.iecraft.com/news/wp-content/uploads/2021/12/img_61c93fb1cd91a.png" alt="hmcl图像" style="zoom:50%;" />
+<img src="https://www.iecraft.com/news/wp-content/uploads/2021/12/img_61c93fb1cd91a.png" alt="hmcl图像" class="responsive-image"  />
 
 **本篇 blog 将以 `PCL2` 作为例子**
 
@@ -49,7 +49,7 @@ pinned: true
 
 以 PCL2 为例
 
-<img src="https://t.tutu.to/img/mOxrG" alt="java导入" style="zoom:60%;" />
+<img src="https://t.tutu.to/img/mOxrG" alt="java导入" class="responsive-image" " />
 
 一般来说选择自动搜索和导入即可，手动也行，这没啥事
 
@@ -83,9 +83,9 @@ pinned: true
 
 假如我需要安装 Fabric ：
 
-<img src="https://t.tutu.to/img/mS0oo" alt="下载正式版" style="zoom:60%;" />
+<img src="https://t.tutu.to/img/mS0oo" alt="下载正式版" class="responsive-image"  />
 
-<img src="https://t.tutu.to/img/mr7iG" alt="版本号和上面那个图不对不用管，当前最新的就行" style="zoom:60%;" />
+<img src="https://t.tutu.to/img/mr7iG" alt="版本号和上面那个图不对不用管，当前最新的就行" class="responsive-image"  />
 
 
 
@@ -97,7 +97,7 @@ PCL2 支持内置的下载，可以很方便的下载模组，当然有些未收
 
 具体的操作方法很简单，自己摸索就会了：在 启动 里面找到你想要玩的版本，之后前往 下载 来下载模组：
 
-<img src="https://t.tutu.to/img/mrKan" alt="在 PCL2 下载模组" style="zoom:60%;" />
+<img src="https://t.tutu.to/img/mrKan" alt="在 PCL2 下载模组" class="responsive-image"  />
 
 当然，需要和你选择的 Minecraft 版本号和模组加载器（Forge/Fabric/NeoForge/…）对得上的模组。
 
@@ -125,7 +125,7 @@ PCL2 支持内置的下载，可以很方便的下载模组，当然有些未收
 
 拖入以后，你如果需要在游戏内启用，比如说我需要安装 红石显示
 
-<img src="https://t.tutu.to/img/mrf6d" alt="资源包页面" style="zoom:70%;" />
+<img src="https://t.tutu.to/img/mrf6d" alt="资源包页面" class="responsive-image"  />
 
 右侧即是你启用过的资源包。
 
