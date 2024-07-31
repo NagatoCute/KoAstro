@@ -3,7 +3,7 @@ title: '致初玩Minecraft Java的新人'
 description: '关于如何使用模组，你需要知道'
 pubDate: 'Jul 12 2024'
 heroImage: '/Minecraft.png'
-pinned: true
+pinned: false
 ---
 
 
