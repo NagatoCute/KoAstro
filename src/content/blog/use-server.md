@@ -36,9 +36,9 @@ pinned: TRUE
 ## 白嫖
 
 ### 阿里学生认证可以白嫖300块钱额度
-
+[阿里云 - 学生认证](
 https://university.aliyun.com/mobile?spm=a2c6h.12873639.article-detail.6.45a42e34LIo0xA&clubTaskBiz=subTask..11405194..10212..&userCode=lwnkbv7n
-
+)
 ### 购买了一台最便宜的服务器 -285
 
 [阿里云 - 弹性计算 (aliyun.com)](https://ecs-buy.aliyun.com/ecs/#/custom/prepay/cn-qingdao)
