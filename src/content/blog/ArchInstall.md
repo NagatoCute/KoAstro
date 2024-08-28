@@ -11,7 +11,7 @@ pinned: true
 
 ## 先看看完成的样子：
 
-<img src="https://img.picui.cn/free/2024/08/28/66cf35fbb42c5.jpg"  alt="图像" class="responsive-image" />
+<img src="https://vip.helloimg.com/i/2024/08/28/66cf37a403168.jpg"  alt="图像" class="responsive-image" />
 
 ## 先安装基础的无图形化界面
 ## 前期准备：
