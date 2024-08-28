@@ -6,7 +6,7 @@ heroImage: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsJCQcJCQcJC
 pinned: true
 ---
 > 本文发布于2024-8-28，请注意时效。
-> 
+
 > 主体是[官网的教程](https://archlinuxstudio.github.io/ArchLinuxTutorial/#/rookie/basic_install)，但是融合了各种踩坑
 
 ## 先看看完成的样子：

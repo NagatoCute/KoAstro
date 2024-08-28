@@ -5,7 +5,6 @@ pubDate: 'Jun 26 2024'
 heroImage: '/debian12.png'
 pinned: false
 ---
-
 #### 总的来说具体的浏览器可以搜到，这里只说我自己安装的一些不同...
 大体的我按照这个来安装的
 [教程](https://blog.csdn.net/weixin_44200186/article/details/131970040)
