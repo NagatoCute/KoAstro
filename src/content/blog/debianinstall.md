@@ -3,7 +3,7 @@ title: 'Debian的安装和配置'
 description: '基于debian12'
 pubDate: 'Jun 26 2024'
 heroImage: '/debian12.png'
-pinned: true
+pinned: false
 ---
 
 #### 总的来说具体的浏览器可以搜到，这里只说我自己安装的一些不同...
